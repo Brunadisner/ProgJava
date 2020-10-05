@@ -16,9 +16,14 @@ class Exer1{
 
         System.out.println("Digite o nome do Autor");
         sr.nome = s.nextLine();
-
         System.out.println("Digite o seu id");
         sr.id = s.nextInt();
+
+        System.out.println("Nome: "+sr.nome);
+        
+
+        System.out.println("ID: "+sr.id);
+       
 
 
 
