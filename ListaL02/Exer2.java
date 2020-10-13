@@ -49,25 +49,25 @@ public class Exer2{
         Scanner s  = new Scanner(System.in);
 
         Pessoa1 p = new Pessoa1();
-        Pessoa1 p2 = new Pessoa1();
+        //Pessoa1 p2 = new Pessoa1();
 
         p.imprimiDados();
         
         
         System.out.println("Digite o nome: ");
         String nome = s.next();
-        p2.setNome(nome);
+        p.setNome(nome);
 
         System.out.println("Digite a idade: ");
         int idade = s.nextInt();
-        p2.setIdade(idade);
+        p.setIdade(idade);
 
         System.out.println("Digite o seu peso");
         float peso = s.nextFloat();
         //lembrar que precisa digitar o número com virgula
-        p2.setPeso(peso);
+        p.setPeso(peso);
 
-        p2.imprimiDados();
+        p.imprimiDados();
 
     }
     
