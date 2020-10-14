@@ -57,12 +57,11 @@ public class Exer4 {
         Retangulo r = new Retangulo();
         Retangulo r1 = new Retangulo();
         Scanner s = new Scanner(System.in);
+       
+        r1.imprimeDimensoes();
+        
 
-        //r1.setBase(3);
-        /*r1.areaRetangulo();
-        r1.diagonalRetangulo(base1, altura1);
-        r1.perimetroRetangulo(base1, altura1);
-        r1.imprimeDimensoes();*/
+        
 
         System.out.println("Digite o valor da Base do retangulo");
         int base = s.nextInt();
@@ -70,10 +69,6 @@ public class Exer4 {
         System.out.println("Digite o valor da Altura do retangulo");
         int alt = s.nextInt();
         r.setAltura(alt);
-        r.areaRetangulo(base, alt);
-        r.diagonalRetangulo(base, alt);
-        r.perimetroRetangulo(base, alt);
-
         r.imprimeDimensoes();
 
 
