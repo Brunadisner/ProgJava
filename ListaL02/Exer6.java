@@ -49,7 +49,12 @@ class Retangulo {
     public int getAltura(){
         return altura;
     }
-    // Imprime as dimensoes do retangulo
+    void aumenta(int valor){
+        this.base = valor + this.base;
+        this.altura = valor+ this.altura;
+
+    }
+    
     
 }
 public class Exer6 {
