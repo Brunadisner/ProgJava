@@ -54,6 +54,9 @@ class Retangulo {
         this.altura = valor+ this.altura;
 
     }
+    void aumentaparaconterCirculo(Circulo circulo){
+        
+    }
     
     
 }
