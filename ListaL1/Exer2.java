@@ -10,6 +10,15 @@ class Compra {
         setPreço(preço);
         setQuantidade(quantidade);
     }
+
+
+    public Compra() {
+        setNomeProduto("");
+        setPreço(0);
+        setQuantidade(0);
+    }
+    
+    
     public void setNomeProduto(String novo) {
         this.nomeProduto = novo;
 
@@ -48,7 +57,7 @@ public class Exer2 {
         int quantidade = s.nextInt();
         
         
-        Compra compra1 = new Compra(nome, preço, quantidade);
+        Compra compra1 = new Compra();
         compra1.imprimeResumo();
     }
     

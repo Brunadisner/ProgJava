@@ -29,6 +29,7 @@ class Post{
 
     public void setAutor(Autor autor){
         this.autor = autor;
+        
     }
     public void setTexto(String texto){
         this.texto = texto;
@@ -42,9 +43,9 @@ class Post{
 
     // Imprime todas as propriedades da classe no formato:
     public void imprimeResumo() {
-        System.out.println("Nome do autor é: "+ getAutor());
-        //System.out.println("O ID é "+ getId());
-        System.out.println("Texto: "+ getTexto());
+        System.out.println("Nome do autor é: "+ this.autor.getNome());
+  		System.out.println("O ID é "+ this.autor.getId());
+        System.out.println("Texto: "+ this.texto);
         
     }
 }
@@ -62,6 +63,7 @@ public class Exer5 {
         autor.setNome(s.next());
         System.out.println("Digite o id:");
         autor.setId(s.nextInt());
+        post.setAutor(autor);
         System.out.println("Digite o texto:");
         post.setTexto(s.next());
         post.imprimeResumo();

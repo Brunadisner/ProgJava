@@ -17,10 +17,10 @@ class Tester {
         this();
         System.out.println(s);
     }
-    }
+}
     class Exer3 {
     public static void main(String[] args) {
-    //Tester t = new Tester(5);
-    Tester h = new Tester("prog");
-    }
-    }
+    Tester t = new Tester(5.2);
+    //Tester h = new Tester("prog");
+}
+}
