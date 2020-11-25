@@ -5,28 +5,25 @@ inicie pela letra 'h' aparecem no vetor.*/
 class Parser{
     public static int analize(String[] vetor){
         int contT = 0;
-        for(int i = 0; i<=vetor.length; i++){
+        for(int i = 0; i < vetor.length; i++){  
         
             if(vetor[i].equals("token")){
                 contT++;
             }
-            if(vetor[i].equals("h")){
+            if(vetor[i].startsWith("h")){ 
                 contT++;
+
             }
         }
         return contT;
 
 
     }
-
-
-
 }
-
 public class Exer6 {
     public static void main(String[] args) {
         
-        String vet[] = {"hoje", "bruna","token","token"};
+        String vet[] = {"hoje", "bruna","token","token","hipopotamo","prog"};
         int p = Parser.analize(vet);
         System.out.println("Aparece: " + p);
 
